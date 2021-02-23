@@ -28,9 +28,20 @@ Customers are able to keep track of the quote system progress with the help of a
 
 ![image](https://user-images.githubusercontent.com/62531841/108912102-c3f14500-75ed-11eb-8ad8-700ba8b47a43.png)
 
+### Business Logic
+
+Essentially, each selection made by the user is captured and stored temporarily until the quote is finalized.  Once the selections are made, the user can progress to the customer details page, where they input their personal information.
+
 ![image](https://user-images.githubusercontent.com/62531841/108912647-893bdc80-75ee-11eb-9ff3-6f1fa1177a80.png)
 
+Once the user finalizes the quote, all the data pertaining to the schema is sent back to the database and the user is presented with their quote information.  
+
 ![image](https://user-images.githubusercontent.com/62531841/108912483-5396f380-75ee-11eb-88c4-4f51567f9b5d.png)
+
+### Future Updates
+
+Currently, the users must contact us outside of the site - I am using Facebook Business Page as my main contact method with customers.  Ideally, a way to schedule and correspond to customers will be integrated in future updates, as will Stripe payments. I have a backend dashboard page for registered accounts where it will display and allow easier retrieval and access to quotes, invoices, payments, and other pertinent information.  
+
 
 
 
