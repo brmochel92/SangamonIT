@@ -9,9 +9,13 @@ ___
 ![](https://img.shields.io/badge/Database-MongoDB-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
 ![](https://img.shields.io/badge/Other-Express-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
 
+___
+
 ### Intro
 
 As a repair shop, handing out quotes is probably something that you find yourself doing all the time.  It gets repetitive and most of the times can be a distraction from more important work that needs to be done to keep the business thriving.  One way to cut back on all of this time is by developing a custom quote system that can accomodate for a large percentage of the devices you find yourself repairing for clients.  
+
+___
 
 ### Site Images
 
@@ -19,6 +23,8 @@ Below are some snapshots of the site in action
 
 ![image](https://user-images.githubusercontent.com/62531841/108917358-39144880-75f5-11eb-888d-d357d2446b99.png)
 ![image](https://user-images.githubusercontent.com/62531841/108914223-a8d40480-75f0-11eb-8fa8-3ad6ad7c753d.png)
+
+___
 
 ### Functions 
 
