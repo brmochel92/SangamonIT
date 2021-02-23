@@ -1,6 +1,6 @@
-# SangamonIT
-
+# SangamonIT 
 ![image](https://user-images.githubusercontent.com/62531841/108911795-5fce8100-75ed-11eb-8c69-f7cc92163207.png)
+
 
 As a repair shop, handing out quotes is probably something that you find yourself doing all the time.  It gets repetitive and most of the times can be a distraction from more important work that needs to be done to keep the business thriving.  One way to cut back on all of this time is by developing a custom quote system that can accomodate for a large percentage of the devices you find yourself repairing for clients.  
 
