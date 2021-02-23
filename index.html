@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sangamon IT Solutions</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+  <!-- Font Awesome icons-->
+  <script src="https://kit.fontawesome.com/bc7f034a0f.js" crossorigin="anonymous"></script>
+
+  
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center">
+          <a href="index.html" class="logo mr-auto"><img src="assets/img/logo_2_edited.png" alt="" class="img-fluid"></a>
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#about">Offers</a></li>
+              <li><a href="#services">Services</a>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+
+            </ul>
+          </nav><!-- .nav-menu -->
+
+<!-- 
+                       The progress Modal -->
+                      <div id="progressModal" class="modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            
+                            <!-- Modal content -->
+                            <div class="modal-body">
+                              <div class="spinner-border text-primary" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                            </div>
+                             
+                          </div>
+                        </div>
+                      </div> 
+
+
+          <a class="btn" id="quoteButton">Free Quote &nbsp; <i id="battery" class="fa"></i></a>
+            <div class="cover"></div>
+            <!-- The Quote Modal Home Page -->
+            <div id="quoteModal" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="quoteModalLabel" style="color:#2E3192;"><i class="fas fa-fan fa-spin"></i> &nbsp; Please select Device Type</h4>
+                    <button type="button" class="close2" data-dismiss="quoteModal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Modal content -->
+                  <div class="modal-body" style="background-color:#2E3192;">
+                    <form class="form-container2" method="POST">
+                      <div class="row">
+                        <div class="col-4">
+                          <h6 style="color: white; text-align: center;">Cell Phone</h6>
+                          <button type="button" id="cellquoteButton" style="background: transparent; border: none;">
+                            <img class="img-responsive" src="assets/img/cellimage.png" alt="Cell Phone" style="max-width: 80%;">
+                          </button>
+                        </div>
+                        <div class="col-4" style="text-align: center;">
+                          <h6 style="color: white; text-align: center;">Game Console</h6>
+                          <button type="button" style="background: transparent; border: none;">
+                            <img class="img-responsive" src="assets/img/gamepad.png" alt="Game Console" style="max-width: 80%;">
+                          </button>
+                        </div>
+                        <div class="col-4" style="text-align: center;">
+                          <h6 style="color: white; text-align: center;">Server</h6>
+                          <button type="button" style="background: transparent; border: none;">
+                            <img class="img-responsive" src="assets/img/server.png" alt="Server" style="max-width: 80%;">
+                          </button>
+                        </div>
+                      </div>
+                          <br>
+                          <br>
+                      <div class="row">
+                        <div class="col-4">
+                          <h6 style="color: white; text-align: center;">Custom Gaming PC</h6>
+                          <button type="button" style="background: transparent; border: none;">
+                            <img class="img-responsive" src="assets/img/towerpc.png" alt="Desktop PC" style="max-width: 80%;">
+                          </button>
+                        </div>
+                        <div class="col-4" style="text-align: center;">
+                          <h6 style="color: white; text-align: center;">Laptop, Tablet, PC</h6>
+                          <button type="button" style="background: transparent; border: none;">
+                            <img class="img-responsive" src="assets/img/laptop-tablet.png" alt="Laptop/Tablet" style="max-width: 80%;">
+                          </button>
+                        </div>
+                        <div class="col-4" style="text-align: center;">
+                          <h6 style="color: white; text-align: center;">Other Devices</h6>
+                          <button type="button" style="background: transparent; border: none;">
+                            <img class="img-responsive" src="assets/img/questionmark.png" alt="Other" style="max-width: 80%;">
+                          </button>
+                        </div>
+                      </div>
+                      
+                    </form>
+                  </div>
+                    <div id="quoteFooter" class="modal-footer" style="background-color:#5C6CF7;">
+                      <div class="row">
+
+                        
+                        <!-- <div class="col">
+                            <button type="button" id="quote-next" class="btn btn-sm btn-block" onClick="handleQuote()">Submit</button>
+                        </div>   -->
+                        <div class="col">
+                            <button type="button" id="obtainquotecancel" class="btn btn-sm btn-block" data-dismiss="alert">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- The Cell Phone Quote Modal -->
+            <div id="cellquoteModal" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="quoteModalLabel" style="color:#2E3192;"><i class="fas fa-fan fa-spin"></i> &nbsp; Cell Phone Repair Details</h4>
+                    <button type="button" class="close2" data-dismiss="cellquoteModal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Modal content -->
+                  <div class="modal-body" style="background-color:#2E3192;">
+                      <form class="form-container2" id="form-submit" method="POST">
+                        <div class="form-group2" id="cellManufacturerDiv" data-level="0">
+                          <label for="cellManufacturer">Please Select the Cell Manufacturer</label>
+                          <select 
+                            onChange="getProgress()"
+                            value="progress1"
+                            class="custom-select"
+                            name="cellManufacturer"
+                            id="cellManufacturer"
+                            style="color: #2E3192;"
+                          >
+                          </select>
+                        </div>
+                        <div class="form-group2" id="device-group-model-Div" style="display:none;" data-level="1">
+                          <label for="cellgroupModel">Please Select Your Model</label>
+                          <select
+                            onChange="getProgress2()"
+                            value="progress1"
+                            class="custom-select"
+                            id="cellgroupModel"
+                            name="cellGroupModel"
+                            style="color: #2E3192;"
+                          >
+                          </select>
+                        </div>
+                        <div class="form-group4" id="device-model-Div" style="display:none;" data-level="2">
+                          <label for="cellModel">Which One?</label>
+                          <select onChange="getProgress3()" value="progress1" class="custom-select" id="cellModel" name="cellModel" style="color: #2E3192;">
+                          </select>
+                        </div>
+                        <!-- Cell Phone Quote Repair Type -->
+                        <div class="form-group20" id="otherFieldDiv20" style="display:none;" data-level="3">
+                          <label for="repairType">What type of issue are you having?</label>
+                          <select onChange="getProgress4()" value="progress1" class="custom-select" id="repairType" name="repairType" style="color: #2E3192;">
+                          </select>
+                        </div>
+                        <br>
+                        <div>
+                          <button  class="quote-reset-Btn" type="reset">Restart Quote</button>
+                          <button type="submit" id="quoteNext" class="quote-submit-Btn" disabled>Submit</button>
+                        </div>
+                    </form>
+                  </div>
+                    <div id="cellQuoteFooter" class="modal-footer" style="background-color:#5C6CF7;">
+                      <div class="container">
+                        <div class="row justify-content-between" style="align-items:center;">
+                          <div class="col-4" style="margin-left: -2.3em;">
+                            <div class="progress" data-percentage="0">
+                              <div class="progress-value" data-label="0%">
+                              </div>
+                              <span class="progress-left">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <span class="progress-right">
+                                <span class="progress-bar"></span>
+                              </span>
+
+                            </div>
+                          </div>
+                          <div class="col-4">
+                              <button type="button" id="cellquotecancel" class="btn btn-sm btn-block" data-dismiss="alert">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div> 
+            <!-- The Cell Repair Detail Quote  -->
+            <div id="detailQuoteModal" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="quoteModalLabel" style="color:#2E3192;"><i class="fas fa-fan fa-spin"></i> &nbsp; Contact Information</h4>
+                    <button type="button" class="close2" data-dismiss="cellquoteModal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                
+                  <!-- Modal Body -->
+                  <div class="modal-body" style="background-color:#2E3192; color: white;">
+                    <form>
+                      <label for="basic-addon1">What's Your Name</label>
+                      <div class="row">
+                        <div class="col input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">First</span>
+                          </div>
+                          <input type="text" id="quoteFirstName" class="form-control" required>
+                        </div>
+                        <div class="col input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Last</span>
+                          </div>
+                          <input type="text" id="quoteLastName" class="form-control" required>
+                        </div>
+                      </div>
+                      <label for="form1">Best Contact #</label>
+                      <div class="md-form">
+                        <input type="text" id="quotePhoneNumber" placeholder="Phone" class="form-control" required>
+                        <input type="text" id="form2" class="form-control" style="display: none;" >
+                      </div>
+                      <br>
+                      <label for="basic-addon3">What's Your Email Address</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon3">Email</span>
+                        </div>
+                        <input type="text" class="form-control" id="quoteEmailAddress" aria-label="emailAddress" required>
+                      </div>
+                      <label for="basic-addon4">What's Your Address?</label>
+                      <div class="row">
+                        <div class="col input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon4">Street</span>
+                          </div>
+                          <input type="text" class="form-control" id="quoteStreetAddress" aria-label="streetAddress" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon4">City</span>
+                          </div>
+                          <input type="text" class="form-control" id="quoteCityAddress" aria-label="quoteState" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon4">State</span>
+                            </div>
+                            <input type="text" class="form-control" id="quoteState" aria-label="streetAddress" required>
+                          </div>
+                          <div class="col input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon4">Zip</span>
+                            </div>
+                            <input type="text" class="form-control" id="quoteZip" aria-label="quoteState" required>
+                          </div>
+                      </div>
+                      </div>
+                      <!-- Modal Footer -->
+                      <div id="cellQuoteFooter" class="modal-footer" style="background-color:#5C6CF7;"> 
+                        <div class="container" style="align-items:center;">
+                          <div class="row justify-content-between">
+                            <div class="col-4" style="margin-left: -2.3em;">
+                              <div class="progress" data-percentage="80">
+                                <div class="progress-value" data-label="80%">
+                                </div>
+                                <span class="progress-left">
+                                  <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                  <span class="progress-bar"></span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" id="cellQuoteEndButton" class="btn btn-sm btn-block" onClick="submitQuote();" style="margin-top: 12px;">Finalize</button>
+                            </div>  
+                            <div class="col">
+                                <button type="button" id="repairdetailCancel" class="btn btn-sm btn-block" data-dismiss="alert" style="margin-top: 12px;">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <!-- The Cell Quote End Modal  -->
+            <div id="cellQuoteEnd" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="quoteModalLabel" style="color:#2E3192;"><i class="fas fa-fan fa-spin"></i> &nbsp; View Your Custom Quote Below</h4>
+                    <button type="button" class="close2" data-dismiss="cellQuoteEnd" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Modal Body -->
+                  <div class="modal-body" style="background-color:#2E3192; color: white;">
+                    <div class="row justify-content-center">
+                      <div class="col">Your Quote Price is:
+                      </div><br><br>
+                    </div>
+
+                    <div class="row justify-content-center">
+                      <div class="col-3 cellQuotePriceContainer"><span id="cellquotePrice"></span></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col">
+                        <h6 style="background-color: #5C6CF7; color: #2E3192; font-weight: 900; text-align: center; padding: 8px; border-radius: 5px;">Depending on parts availability, we can get this completed for you as quick as today!  Please reach out to discuss availability or schedule now on your Facebook Page if you have already discussed with us! </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Footer -->
+                  <div id="cellQuoteFooter" class="modal-footer" style="background-color:#5C6CF7;"> 
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <button type="button" id="cellQuoteContact" class="btn btn-lg btn-block" data-dismiss="alert" onclick="window.location.href='https://www.facebook.com/sangamonIT';">Reach Out</button>
+                          </div>
+                          <div class="col">
+                            <button type="button" id="cellQuoteSchedule" class="btn btn-lg btn-block" data-dismiss="alert" onclick="window.location.href='https://www.facebook.com/sangamonIT';">Schedule Now</button>
+                          </div>
+                        </div> 
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          <!-- Account Login -->
+          <button id="myBtn" role="button" class="btn"><i class="fas fa-user"></i></button>
+            <div class="cover"></div>
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Login Below</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- Modal content -->
+                    <div class="modal-body">
+                      <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="loginEmail" class="form-control" required />
+                          <label class="form-label" for="form2Example1">Email address</label>
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="loginPassword" class="form-control" required />
+                          <label class="form-label" for="form2Example2">Password</label>
+                        </div>
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="form2Example3"
+                                checked
+                              />
+                              <label class="form-check-label" for="form2Example3"> Remember me </label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <!-- Simple link -->
+                            <button type="button" class="btn btn-outline-custom" style="margin-top: -5px;">Forgot password?</button>
+                          </div>
+                        </div>
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4" onClick="handleSignIn()">Sign in</button>
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>Not a member? <button id="registrationButton" type="button" class="btn btn-outline-custom" style="margin-left: 15px;"><i class="fas fa-id-badge"></i>&nbsp; Register </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Account Registration -->
+            <!-- The Modal -->
+            <div id="modal2" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Register Below</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Modal content -->
+                  <div class="modal-body"> 
+                    <form>
+                      <!-- First and Last Name Input-->
+                      <div class="row mb-4" >
+                        <div class="col">
+                          <div class="form-outline">
+                            <input type="text" id="firstName" placeholder="First Name" class="form-control" required />
+                            <label for="firstName"></label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-outline">
+                            <input type="text" id="lastName" placeholder="Last Name" class="form-control" required />
+                            <label for="lastName"></label>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input type="email" id="emailAddress" placeholder="Email Address" class="form-control" required />
+                        <label class="form-label" for="emailAddress"></label>
+                      </div>
+                    
+                      <!-- Phone input -->
+                      <div class="form-outline mb-4">
+                        <input type="number" id="phoneNumber" placeholder="Phone Number" class="form-control" required maxlength="10" oninput="this.value=this.value.slice(0,this.maxLength)" />
+                        <label class="form-label" for="phoneNumber"></label>
+                      </div>
+                      
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <input type="password" id="password" placeholder="Password" class="form-control" required maxlength="30" minlength="12" onchange='check_pass();' />
+                        <label class="form-label" for="password"></label>
+                      </div>         
+                      
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <input type="password" id="passwordVerify" placeholder="Please Verify Password" class="form-control" required maxlength="30" minlength="12" onchange='check_pass();' />
+                        <label class="form-label" for="passwordverification"></label>
+                      </div>  
+                    
+                      <!-- Submit button -->
+                      <button type="submit" id="submitRegister" class="btn btn-primary btn-block mb-4" onClick="handleRegister()">Sign up</button>
+
+                      <!-- Return to Login Screen Button from Registration Page -->
+                      <button type="submit" id="returnLogin" class="btn btn-block mb-4" style="background-color: #2E3192; color: white;">Return to Login</button>
+                    </form>                 
+                  </div>
+                </div>
+              </div>
+            </div>                 
+
+</div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Sangamon IT Solutions</h1>
+          <h2>Full-Service IT shop located in Auburn, IL with a specialization in mobile and PC repairs.</h2>
+          <div><a href="#about" class="btn-get-started scrollto">Current Offers</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="assets/img/hero-img_4.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>iPhone Repair Pricing</h2>
+        <p>Obtain a free quote for exact pricing.   Here are the prices of our most requested services </p>
+      </div>
+
+      <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box featured">
+              <h3>iPhone Screen Replacement</h3>
+              <h5>Starting At</h5>
+              <h4><sup>$</sup>64.99</h4>
+              <ul>
+                <li>Top Glass & Digitizer Included</li>
+                <li>Free Pickup/Drop-Off</li>
+                <li>30-Day Warranty</li>
+                <li>Free Screen Protector</li>
+                <li>Apple Certified iOS Technician</li>
+              </ul>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button type="button" class="btn" id="openQuote1">Quote</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-primary">Schedule</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <h3>iPhone Replacement Battery</h3>
+              <h5>Starting At</h5>
+              <h4><sup>$</sup>44.99</h4>
+              <ul>
+                <li>High Quality Replacement</li>
+                <li>Waterproof Seal Included*</li>
+                <li>Free Pickup/Drop-Off</li>
+                <li>30-Day Warranty</li>
+                <li>Apple Certified iOS Technician</li> 
+              </ul>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button type="button" class="btn" id="openQuote2">Quote</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-primary">Schedule</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>iPhone Speaker Replacement</h3>
+              <h5>Starting At</h5>
+              <h4><sup>$</sup>29.99</h4>
+              <ul>
+                <li>High Quality Replacement</li>
+                <li>Fixes most audio issues</li>
+                <li>Free Pickup/Drop-Off</li>
+                <li>30-Day Warranty</li>
+                <li>Apple Certified iOS Technician</li>
+                
+              </ul>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button type="button" class="btn" id="openQuote3">Quote</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-primary" >Schedule</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              
+              <h3>iPhone Charger Port Replacement</h3>
+              <h5>Starting At</h5>
+              <h4><sup>$</sup>59.99</h4>
+              <ul>
+                <li>High Quality Replacement</li>
+                <li>Fixes Loose Charger Ports</li>
+                <li>Free Pickup/Drop-Off</li>
+                <li>30-Day Warranty</li>
+                <li>Apple Certified iOS Technician</li>
+              </ul>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button type="button" class="btn" id="openQuote4">Quote</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-primary" onclick="">Schedule</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="assets/img/about_2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Current Promotion</h3>
+            <p class="font-italic">
+              Deeply discounted LCD Replacements!
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> High Quality Aftermarket Parts Used. </li>
+              <li><i class="icofont-check-circled"></i> Free Pickup/Drop-Off Included</li>
+              <li><i class="icofont-check-circled"></i> Valid until 12/26/2020</li>
+              <li><i class="icofont-check-circled"></i> Free Screen Protector Included </li>
+            </ul>
+            <button type="button" class="btn btn-sm" id="promotion-schedule-button">Schedule Now &nbsp; <i id="hourglass" class="fa"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Sangamon IT specializes in repairs in small electronics.  Whether it is cell phones, game consoles, servers, PC, Laptop, tablets, and more! Free Pickup & Drop-Off offered with most of our services</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4><a href="#services">Cell Phone Repairs</a></h4>
+              <p>From replacing shattered screens to broken charging ports, Sangamon IT is equipped to handle your cell phone repairs.  Reach out for a free quote today</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Free Pick-Up/Drop-Off</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> 90-Day Warranty</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> High Quality Aftermarket Parts Used</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Certified Technicians</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Same Day Service (valid if parts in stock)</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <h4><a href="#services">Game Consoles</a></h4>
+              <p>Whether you have a brand new Playstation 5 or Xbox Series X or an old school Nintendo, Sangamon IT offers cleaning/refurbishing services along with repairs and upgrades.  Reach out for a free quote today!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Free Pick-Up/Drop-Off</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> 90-Day Warranty</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> High Quality Aftermarket Parts Used</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Certified technicians</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Same day service on most repairs!</p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="fas fa-server"></i>
+              </div>
+              <h4><a href="#services">Servers</a></h4>
+              <p>Are you upgrading or thinking about building a new server?  Reach out and see how Sangamon IT can help!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Custom Network-Attached Storage Servers</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Networking Upgrades & Consultations - Learn how you can get 10 Gigabit Speeds in your home today!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Experienced technicians with background in enterprise hardware</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Free Initial Consultation Offered</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h4><a href="#services">PC/Laptop</a></h4>
+              <p>Is your old PC or Laptop running slower than usual or are you considering an upgrade?  Sangamon IT is equipped to handle any repairs or new builds - whether it is an ultra gaming rig or something that offers extreme price to performance ratio. Reach out for a free quote and we will take care of you</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Cheapest rates in Central IL!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Experienced technicians who care about our customers</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Fast Turnaround times - same day on some repairs or upgrades!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> 1 Year Warranty Offered on most repairs</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="fas fa-tablet"></i>
+              </div>
+              <h4><a href="#services">Tablets</a></h4>
+              <p>Affordable tablet repairs you can count on, from replacing shattered screens to replacing batteries.  Get a free quote today!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Free Pickup/Drop-Off Included</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> 90-Day Warranty</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Certified Technicians used on every repair</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Same day service offered (if parts in stock)</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="far fa-hdd"></i>
+              </div>
+              <h4><a href="#services">Other Electronics</a></h4>
+              <p>If you didn't see what you were looking for, don't worry!  We still got your back.  Reach out for a free quote and check out some of the other common products we service below!</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Smart Watches</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> PC Peripherals</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Printers</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Head Phones and Sound Systems</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> Drones</p>
+              <br>
+              <p><i class="icofont-check-circled"></i> ...Much More! Reach Out Today</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Choose Sangamon IT?</h2>
+          <p>Being a local company, we have always strived to put our customers before anything.  Aside from offering an incredible service to those in need, we are always looking for ways to improve.  Let us know how we can do better!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bxs-building-house"></i>
+              <h4>Small & Local</h4>
+              <p>We are small but pack a powerful punch! Being a small local business allows us to offer a more affordable service to our customers </p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bxs-truck"></i>
+              <h4>Mobile</h4>
+              <p>By operating a mobile repair business, we are able to come directly to you rather than the other way around.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bxs-check-shield"></i>
+              <h4>Integrity</h4>
+              <p>It's not about us, it's about you!  Sangamon IT cares about our customers and promises to make it right or it's on us. </p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bxs-wrench"></i>
+              <h4>15+ Years Combined Experience</h4>
+              <p>When you have a device that needs repaired, Sangamon IT has the experience to make it happen.  Reach out to us today for a free quote!</p>
+            </div>
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Local Reviews</h2>
+          <p>Don't hear it from us.  Hear some of our recent local customers tell you how amazing our service, transparency, and communication has been for them! </p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Sangamon IT was able to build my son a gaming laptop and deliver within 2 weeks while staying under my budget.  He was very adamant on getting it completed 
+              so that my son could have it before his birthday and I appreciate that!  It has been 8 months and absolutely no issues and he is in love with it. There was one issue involving  
+              the original CPU being out of stock, but Brandon was able to provide an upgrade at no additional expense. 
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Coreen Ball</h3>
+            <h4>Chatham, IL</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Brandon at Sangamon IT was able to replace my screen the same day that I requested service.  I am the type of person who can't live without my phone and they were able to have it quick on top of picking it up and dropping it back off to my house. Let's Gooo!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Blake Birch</h3>
+            <h4>Auburn, IL</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              My older PC was beginning to overheat and Sangamon IT was able to install a new fan and thermal paste for a very affordable price in my opinion.  I would highly recommend!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Hillsboro, IL</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Was looking at Synology NAS but then found Sangamon IT who was able to build me a bigger, better NAS than I could have originally afforded with the Synology.  Super knowledgeable staff who know what they are doing. I will never run out of storage again! 
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I was looking at a replacement screen for my son's iPhone XR and was surprised at how much local shops were trying to charge.  After getting a free quote with Sangamon IT, I was able to get my screen replaced the same day for under $100.  It has now been 3 months and still good.  Sometimes you don't want to fork out hundreds of dollars and just want to get by (kids aren't exactly the easiest on these things to begin with)
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Hankins</h3>
+            <h4>Springfield, IL</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Service Photos</h2>
+          <p>Check out some of our most recent services!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Phone Repair</li>
+              <li data-filter=".filter-card">PC/Laptop</li>
+              <li data-filter=".filter-web">Network & Storage</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Phone Repair</h4>
+                <p>iPhone Screen Replacement</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PC/Laptop</h4>
+                <p>MacBook Pro Top Case Replacement</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PC/Laptop</h4>
+                <p>Custom Gaming PC Build</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PC/Laptop</h4>
+                <p>Custom Gaming PC Build</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Network & Storage</h4>
+                <p>Custom-Built Network Attached Storage</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Phone Repair</h4>
+                <p>iPhone Screen Replacement</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PC/Laptop</h4>
+                <p>MacBook Pro Top Case Replacement</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PC/Laptop</h4>
+                <p>MacBook Pro Top Case Replacement</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PC/Laptop</h4>
+                <p>Replacement HeatSink/Fan</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Enlarge Photo"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Don't see your question?  Don't worry, reach out on Facebook Messenger for the fastest reply!</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help" style="color:#5C6CF7;"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1" style="color: #444444;">What is the turn-around time? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  We offer a same day pickup/drop-off service as long as we have parts in stock.  If we don't have parts in stock, we can order and pick up/drop-off when we receive parts and offer a same day service at that time. 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help" style="color:#5C6CF7;"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed" style="color: #444444;">Are you certified? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Yes, all of our technicians are ACMT and ACiT certified and go through extensive training offered directly through Apple. The Owner has a BS in Computer Science, is working on a MS in Computer Science, and has been working with IBM for the past few years on enterprise hardware. 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help" style="color:#5C6CF7;"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed" style="color: #444444;">What is your coverage area?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  I typically cover approximately 50 miles around the Sangamon County, IL area.  Feel free to still reach out if you fall outside of this to see if we are able to get you serviced! 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help" style="color:#5C6CF7;"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed" style="color: #444444;">Do you offer a warranty? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  We offer a 30 day warranty on most services, as high as 1 year on our custom PC/Laptop/Storage/Networking solutions.  All repairs go through extensive testing to ensure that there are no issues prior to delivery of your device and collection of payment. No payment is ever requested upfront.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help" style="color:#5C6CF7;"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed" style="color: #444444;"> Do you offer free quotes on PC upgrades? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                   Yes, we offer free quotes on all of our services
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>While this is one way to contact us, why not reach us on Facebook Messenger for a quicker reply <a href="https://www.facebook.com/sangamonIT" style="color: #2E3192">@SangamonIT</a>?</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Auburn, IL 62615</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>esolutions0510@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>(217) 801-4449</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7877510609787!2d-89.74882604855772!3d39.586933679369324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88756b99ccde1441%3A0x5826d75341207d2!2s444%20S%205th%20St%2C%20Auburn%2C%20IL%2062615!5e0!3m2!1sen!2sus!4v1607664283309!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><a role="button" id="send-message" class="btn">Send Message</a></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Sangamon IT Solutions</h3>
+            <p>
+              Auburn, IL 62615 <br>
+              United States<br><br>
+              
+              <strong>Phone:</strong> (217) 801-4449<br>
+              <strong>Email:</strong> esolutions0510@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Repair Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">PC/Laptop/Tablet</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Game Consoles</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Other Electronics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Current Promotions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Cell Phone Repairs</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Apple iPhone Repairs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Samsung Repairs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">LG Repairs</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Coverage Area</h4>
+            <p>Covering all of Sangamon County and Surrounding Areas! <br><br></p>
+            <a class="btn btn-sm" id="footer-account" role="button" >Create Account</a>
+            <a class="btn btn-sm" id="footer-login" role="button">Login to Existing</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="mr-md-auto text-center text-md-left">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Sangamon IT Solutions</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+            Designed by <a href="https://bootstrapmade.com/">Consumer Mart</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="https://www.facebook.com/sangamonIT" class="facebook"><i class="bx bxl-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cell-data.js"></script>
+  <script src="assets/js/selectors.js"></script>
+
+
+
+
+<script>
+
+function chargeBattery() {
+  let battery = 
+  document.getElementById('battery');
+  battery.innerHTML = "&#xf244;";
+  setTimeout(function(){
+    battery.innerHTML = "&#xf243;";
+  }, 1000);
+  setTimeout(function(){
+    battery.innerHTML = "&#xf242;";
+  }, 2000);
+  setTimeout(function(){
+    battery.innerHTML = "&#xf241;";
+  }, 3000);
+  setTimeout(function(){
+    battery.innerHTML = "&#xf240;";
+  }, 4000);
+}
+
+chargeBattery();
+setInterval(chargeBattery, 5000);
+
+function hourglassTip() {
+  let hourglass = 
+  document.getElementById('hourglass');
+  hourglass.innerHTML = "&#xf251;";
+  setTimeout(function(){
+    hourglass.innerHTML = "&#xf252;";
+  }, 2000);
+  setTimeout(function(){
+    hourglass.innerHTML = "&#xf253;";
+  }, 4000);
+  
+}
+
+hourglassTip();
+setInterval(hourglassTip, 6000);
+
+
+
+
+</script>
+
+</body>
+
+</html>

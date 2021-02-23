@@ -1,0 +1,3627 @@
+/**
+* Template Name: Techie - v2.2.0
+* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #8577fb;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #5B71F8;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #2E3192;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #5846f9;
+  border-top-color: #e7e4fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  padding: 12px 0;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 100px;
+}
+
+@media (max-width: 992px) {
+  #header {
+    padding: 12px 0;
+  }
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 24px;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 3px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-menu > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #fff;
+}
+
+.nav-menu .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 22px;
+  top: calc(100% + 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.nav-menu .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.nav-menu .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.nav-menu .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #2c4964;
+}
+
+.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+  color: #5846f9;
+}
+
+.nav-menu .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.nav-menu .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.nav-menu .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down .drop-down > a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  }
+}
+
+/* Get Startet Button */
+.get-started-btn {
+  margin-left: 25px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.get-started-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .get-started-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #fff;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #fff;
+  transition: ease-in-out 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #2c4964;
+  padding: 10px 20px;
+  font-weight: 500;
+  outline: none;
+}
+
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+  color: #5846f9;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\eaa1";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(28, 47, 65, 0.6);
+  overflow: hidden;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#hero .container, #hero .container-fluid {
+  padding-top: 84px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #fff;
+  color: #5846f9;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (min-width: 1200px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero {
+    text-align: center;
+  }
+  #hero .container, #hero .container-fluid {
+    padding-top: 68px;
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #hero .hero-img img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f9f8ff;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #5B71F8;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  padding: 120px 0;
+}
+
+.about .content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #2c4964;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5846f9;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  position: relative;
+}
+
+.about .content .read-more:hover {
+  background: linear-gradient(180deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+}
+
+.about .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  padding: 80px 0 60px 0;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.services .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .icon-box h4 a {
+  color: #2c4964;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.services .iconbox-blue i {
+  color: #47aeff;
+}
+
+.services .iconbox-blue:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+
+.services .iconbox-orange i {
+  color: #ffa76e;
+}
+
+.services .iconbox-orange:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+
+.services .iconbox-pink i {
+  color: #e80368;
+}
+
+.services .iconbox-pink:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-pink:hover .icon path {
+  fill: #e80368;
+}
+
+.services .iconbox-yellow i {
+  color: #ffbb2c;
+}
+
+.services .iconbox-yellow:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+
+.services .iconbox-red i {
+  color: #ff5828;
+}
+
+.services .iconbox-red:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-red:hover .icon path {
+  fill: #ff5828;
+}
+
+.services .iconbox-teal i {
+  color: #11dbcf;
+}
+
+.services .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+
+.features .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #5B71F8;
+}
+
+.features .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+
+.features .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #2c4964;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  color: #5B71F8;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .owl-nav, .testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.testimonials .owl-dot.active {
+  background-color: #5B71F8 !important;
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    margin: 30px 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #5B71F8;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #fff;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 48px);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: calc(50% - 50px);
+}
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c4964;
+  background: #f8f8f8;
+}
+
+.pricing h4 {
+  font-size: 36px;
+  color: #5846f9;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+}
+
+.pricing ul i {
+  color: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 4px;
+  color: #fff;
+  transition: none;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: linear-gradient(180deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq {
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%)
+ 
+}
+
+.faq .section-title h2, .faq .section-title p {
+  color: #fff;
+}
+
+.faq .section-title h2::after {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.faq .faq-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li + li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #8577fb;
+}
+
+.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #2c4964;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #5846f9;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #5B71F8;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #2c4964;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+}
+
+.contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(180deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%)
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background: #f2f6f9;
+  min-height: 40px;
+  margin-top: 68px;
+}
+
+.breadcrumbs h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #3c6387;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding: 30px 0 60px 0;
+}
+
+.portfolio-details .portfolio-details-container {
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
+  background-color: #5846f9 !important;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 50px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-details .portfolio-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid white;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: linear-gradient(180deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+}
+
+#footer .copyright-wrap {
+  border-top: 1px solid #8577fb;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #fff;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #5C6CF7;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #2E3192;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg,rgb(86,54,252, 0.9) 0%,rgb(94,159,245, 0.9) 100%);
+  border: none;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #6384F6;
+  
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #2E3192;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.btn.btn-secondary {
+background-color: #5C6CF7;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#form_h1 {
+  color: white;
+}
+
+#b_h1 {
+  color: white;
+  text-decoration: underline;
+}
+
+/* The popup form - hidden by default */
+.form-popup2 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container2 {
+  max-width: 800px;
+  padding: 10px;
+  
+  
+}
+
+/* Full-width input fields */
+.form-container2 input[type=text], .form-container2 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container2 input[type=text]:focus, .form-container2 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container2 .btn {
+  background-color: #5C6CF7;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container2 .btn.btn-secondary {
+  background-color: #5C6CF7;
+  
+  
+  }
+
+/* Add a red background color to the cancel button */
+.form-container2 .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container2 .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+select {
+  font-family: 'FontAwesome', 'Second Font name'
+}
+
+
+
+.form-group {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group3 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group4 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group5 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group6 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group7 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group8 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group9 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group10 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group11 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group12 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group13 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group14 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group15 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group16 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.form-group20 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.cover {
+  background-color: #2E3192;
+  width:100%;
+  height:100%;
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  }
+
+#user-breadcrumb {
+  background-color: #2E3192;
+}
+
+.nav-tabs .nav-link {
+  color: #2E3192;
+}
+
+.breadcrumb-item.active {
+  color: #7A75FB;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero2 {
+
+  background-color: #7A75FB;
+}
+
+#hero2 .container, #hero2 .container-fluid {
+  padding-top: 30px;
+  margin-top: -2%;
+}
+
+.btn-outline-primary {
+  color:#7A75FB;
+  border-color: #7A75FB;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2E3192;
+  border-color: white;
+  color: white;
+}
+
+.panel-table .panel-body{
+  padding:0;
+}
+
+.panel-table .panel-body .table-bordered{
+  border-style: none;
+  margin:0;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type {
+    text-align:center;
+    width: 100px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type {
+  border-right: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type {
+  border-left: 0px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td{
+  border-bottom: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr:first-of-type > th{
+  border-top: 0px;
+}
+
+.panel-table .panel-footer .pagination{
+  margin:0; 
+}
+
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+.panel-table .panel-footer .col{
+ line-height: 34px;
+ height: 34px;
+}
+
+.panel-table .panel-heading .col h3{
+ line-height: 30px;
+ height: 30px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr > td{
+  line-height: 34px;
+}
+
+#footer2 {
+  background-color:  #2E3192;
+  color: #7A75FB;
+  position: fixed;
+  z-index: 1030;
+  right: 0;
+  left: 0;
+  bottom:0;
+}
+#send-message {
+  background-color: #2E3192;
+  color: white;
+}
+
+#send-message:hover {
+  background-color:#5C6CF7;
+  color: white;
+}
+
+#myBtn {
+  margin-left: 15px;
+  color: white;
+  border-color: #2E3192;
+  box-shadow: 0 0 30px 30px #2E3192 inset, 0 0 0 0 #5C6CF7;
+  transition: all 150ms ease-in-out;
+}
+
+#myBtn:hover {
+  margin-left: 15px;
+  background-color: #5C6CF7;
+  color: white;
+  box-shadow: 0 0 5px 0 #5C6CF7 inset, 0 0 5px 2px #2E3192;
+  transition: all 250ms ease-in-out;
+}
+
+#openQuote1 {
+  background-color: #5C6CF7;
+  color: white;
+}
+
+#openQuote1:hover {
+  background-color: #2E3192;
+  color: white;
+}
+
+#openQuote2 {
+  background-color: #5C6CF7;
+  color: white;
+}
+
+#openQuote2:hover {
+  background-color: #2E3192;
+  color: white;
+}
+
+#openQuote3 {
+  background-color: #5C6CF7;
+  color: white;
+}
+
+#openQuote3:hover {
+  background-color: #2E3192;
+  color: white;
+}
+
+#openQuote4 {
+  background-color: #5C6CF7;
+  color: white;
+}
+
+#openQuote4:hover {
+  background-color: #2E3192;
+  color: white;
+}
+
+#promotion-schedule-button {
+  background-color: white;
+  color: #5C6CF7;
+  font-size: 1.2em;
+  border-color: #5C6CF7;
+  transition: all 200ms ease-in-out;
+}
+
+#promotion-schedule-button:hover {
+  background-color: #5C6CF7;
+  color: white;
+  font-size: 1.2em;
+  transition: all 350ms ease-in-out;
+}
+
+#footer-login {
+  background-color: #5C6CF7;
+  color: white;
+  font-weight: bold;
+}
+
+#footer-login:hover {
+  background-color: white;
+  color: #5C6CF7;
+  font-weight: bold;
+}
+
+#footer-account {
+  background-color: #2E3192;
+  color: white;
+  font-weight: bold;
+}
+
+#footer-account:hover {
+  background-color: white;
+  color: #2E3192;
+  font-weight: bold;
+}
+
+#download-all-invoices {
+  background-color:#2E3192;
+  color: white;
+}
+
+#download-all-invoices:hover {
+  color: white;
+  background-color: #5C6CF7;
+}
+
+#download-all-orders {
+  background-color:#2E3192;
+  color: white;
+}
+
+#download-all-orders:hover {
+  color: white;
+  background-color: #5C6CF7;
+}
+
+#user-new-quote {
+  background-color: #2E3192; 
+  color: white; 
+  margin-right: 10px;
+}
+
+#user-new-quote:hover {
+  background-color:#5C6CF7;
+  color: white;
+  margin-right: 10px;
+}
+
+#user-download-order {
+  background-color:#2E3192;
+  color: white;
+}
+
+#user-download-order:hover {
+  background-color:#5C6CF7;
+  color: white;
+}
+
+#user-download-order:active {
+  background-color:#2E3192;
+  color: white;
+}
+
+#user-download-invoice {
+  background-color:#2E3192;
+  color: white;
+}
+
+#user-download-invoice:hover {
+  background-color:#5C6CF7;
+  color: white;
+}
+
+#user-download-invoice:active {
+  background-color:#2E3192;
+  color: white;
+}
+
+#quoteButton {
+  background-color:#2E3192;
+  color: white;
+  margin-left: 10%;
+  border-color: #2E3192;
+  box-shadow: 0 0 30px 30px #2E3192 inset, 0 0 0 0 #5C6CF7;
+  transition: all 150ms ease-in-out;
+}
+
+#quoteButton:hover {
+  background-color:#5C6CF7;
+  color: white;
+  margin-left: 15px;
+  box-shadow: 0 0 5px 0 #5C6CF7 inset, 0 0 5px 2px #2E3192;
+  margin-left: 10%;
+  transition: all 250ms ease-in-out;
+}
+
+
+.close2 {
+  background-color:white;
+  color:  #000;
+  border-color: transparent;
+  transition: all 150ms ease-in-out;
+}
+
+.close2:hover {
+  background-color:#5C6CF7;
+  color: white;
+  border-color: hsl(234, 53%, 49%);
+  transition: all 500ms ease-in-out;
+  
+}
+
+.btn-outline-custom {
+  background-color:transparent;
+  color: #2E3192;
+
+  border-color: #2E3192;
+  border: 1px solid;
+}
+
+.btn-outline-custom:hover {
+  background-color:#5C6CF7;
+  color: white;
+
+  border: 1px solid;
+  border-color: #2E3192;
+}
+
+.quote-submit-Btn {
+  background-color: #5C6CF7;
+  color: white;
+  border-color: #5C6CF7;
+  transition: all 150ms ease-in-out;
+}
+
+.quote-submit-Btn:hover {
+  background-color:#2E3192;
+  color: white;
+  box-shadow: 0 0 5px 0 #2E3192 inset, 0 0 5px 2px #5C6CF7;
+  transition: all 250ms ease-in-out;
+}
+
+.quote-submit-Btn:disabled {
+  display: none;
+}
+
+#cellQuoteEndButton {
+  background-color: #2E3192;
+  color: white;
+  border-color: #2E3192;
+  box-shadow: 0 0 30px 30px #2E3192 inset, 0 0 0 0 #5C6CF7;
+  transition: all 100ms ease-in-out;
+}
+
+#cellQuoteEndButton:hover {
+  background-color: #5C6CF7;
+  color: white;
+  border-color: #5C6CF7;
+  box-shadow: 0 0 5px 0 #5C6CF7 inset, 0 0 5px 2px #2E3192;
+  transition: all 175ms ease-in-out;
+}
+
+#cellQuoteContact {
+background-color: #2E3192;
+color: white;
+border-color: #2E3192;
+box-shadow: 0 0 30px 30px #2E3192 inset, 0 0 0 0 #5C6CF7;
+transition: all 100ms ease-in-out;
+}
+
+#cellQuoteContact:hover {
+background-color: #5C6CF7;
+color: white;
+border-color: #5C6CF7;
+box-shadow: 0 0 5px 0 #5C6CF7 inset, 0 0 5px 2px #2E3192;
+transition: all 175ms ease-in-out;
+}
+
+#cellQuoteDownload {
+  background-color: #2E3192;
+  color: white;
+  border-color: 1px#2E3192;
+  box-shadow: 0 0 30px 30px #2E3192 inset, 0 0 0 0 #5C6CF7;
+  transition: all 100ms ease-in-out;
+}
+
+#cellQuoteDownload:hover {
+  background-color: #5C6CF7;
+  color: white;
+  border-color: 1px #5C6CF7;
+  box-shadow: 0 0 5px 0 #5C6CF7 inset, 0 0 5px 2px #2E3192;
+  transition: all 175ms ease-in-out;
+}
+
+#cellQuoteSchedule {
+  background-color: #2E3192;
+  color: white;
+  border-color: white;
+  box-shadow: 0 0 30px 30px #2E3192 inset, 0 0 0 0 #5C6CF7;
+  transition: all 100ms ease-in-out;
+}
+
+#cellQuoteSchedule:hover {
+  background-color: #5C6CF7;
+  color: white;
+  border-color: #5C6CF7;
+  box-shadow: 0 0 5px 0 #5C6CF7 inset, 0 0 5px 2px #2E3192;
+  transition: all 175ms ease-in-out;
+}
+
+#obtainquotecancel {
+  background-color:#a5000e;
+  border-color: #a5000e;
+  color: white;
+  box-shadow: 0 0 30px 30px #a5000e inset, 0 0 0 0 #e64351;
+  transition: all 100ms ease-in-out;
+  
+}
+
+#obtainquotecancel:hover {
+  background-color: #e64351;
+  border-color: #e64351;
+  color: white;
+  box-shadow: 0 0 5px 0 #e64351 inset, 0 0 3px 2px #a5000e;
+  transition: all 175ms ease-in-out;
+}
+
+#cellquotecancel {
+  background-color:#a5000e;
+  border-color: #a5000e;
+  color: white;
+  box-shadow: 0 0 30px 30px #a5000e inset, 0 0 0 0 #e64351;
+  transition: all 100ms ease-in-out;
+  
+}
+
+#cellquotecancel:hover {
+  background-color: #e64351;
+  border-color: #e64351;
+  color: white;
+  box-shadow: 0 0 5px 0 #e64351 inset, 0 0 3px 2px #a5000e;
+  transition: all 175ms ease-in-out;
+}
+
+#repairdetailCancel {
+  background-color:#a5000e;
+  border-color: #a5000e;
+  color: white;
+  box-shadow: 0 0 30px 30px #a5000e inset, 0 0 0 0 #e64351;
+  transition: all 100ms ease-in-out;
+  
+}
+
+#repairdetailCancel:hover {
+  background-color: #e64351;
+  border-color: #e64351;
+  color: white;
+  box-shadow: 0 0 5px 0 #e64351 inset, 0 0 3px 2px #a5000e;
+  transition: all 175ms ease-in-out;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+.modal-content {
+  border-radius: .5rem;
+  border: 0;
+
+}
+
+.quote-reset-Btn {
+  background-color: #5C6CF7;
+  color: white;
+  border-color: #5C6CF7;
+  transition: all 150ms ease-in-out;
+}
+
+.quote-reset-Btn:hover {
+  background-color:#2E3192;
+  color: white;
+  box-shadow: 0 0 5px 0 #2E3192 inset, 0 0 5px 2px #5C6CF7;
+  transition: all 250ms ease-in-out;
+}
+
+.cellQuotePriceContainer {
+  color: white;
+  background-color: #5C6CF7;
+  text-align: center;
+  border-radius: 5px;
+  padding-block: 10px;
+  font-weight: bold;
+}
+
+.progress {
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.progress-value::before {
+  content: attr(data-label)
+}
+
+.progress:after {
+  content: "";
+  width: 99%;
+  height: 99%;
+  border-radius: 50%;
+  border: 4px solid #efefef;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #2E3192;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+.progress .progress-value {
+  display: flex;
+  border-radius: 50%;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-weight: 300;
+}
+.progress .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* This for loop creates the necessary css animation names Due to the split circle of progress-left and progress right, we must use the animations on each side. */
+.progress[data-percentage="1"] .progress-right .progress-bar {
+  animation: loading-1 0.5s linear forwards;
+}
+.progress[data-percentage="1"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="2"] .progress-right .progress-bar {
+  animation: loading-2 0.5s linear forwards;
+}
+.progress[data-percentage="2"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="3"] .progress-right .progress-bar {
+  animation: loading-3 0.5s linear forwards;
+}
+.progress[data-percentage="3"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="4"] .progress-right .progress-bar {
+  animation: loading-4 0.5s linear forwards;
+}
+.progress[data-percentage="4"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="5"] .progress-right .progress-bar {
+  animation: loading-5 0.5s linear forwards;
+}
+.progress[data-percentage="5"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="6"] .progress-right .progress-bar {
+  animation: loading-6 0.5s linear forwards;
+}
+.progress[data-percentage="6"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="7"] .progress-right .progress-bar {
+  animation: loading-7 0.5s linear forwards;
+}
+.progress[data-percentage="7"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="8"] .progress-right .progress-bar {
+  animation: loading-8 0.5s linear forwards;
+}
+.progress[data-percentage="8"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="9"] .progress-right .progress-bar {
+  animation: loading-9 0.5s linear forwards;
+}
+.progress[data-percentage="9"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="10"] .progress-right .progress-bar {
+  animation: loading-10 0.5s linear forwards;
+}
+.progress[data-percentage="10"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="11"] .progress-right .progress-bar {
+  animation: loading-11 0.5s linear forwards;
+}
+.progress[data-percentage="11"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="12"] .progress-right .progress-bar {
+  animation: loading-12 0.5s linear forwards;
+}
+.progress[data-percentage="12"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="13"] .progress-right .progress-bar {
+  animation: loading-13 0.5s linear forwards;
+}
+.progress[data-percentage="13"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="14"] .progress-right .progress-bar {
+  animation: loading-14 0.5s linear forwards;
+}
+.progress[data-percentage="14"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="15"] .progress-right .progress-bar {
+  animation: loading-15 0.5s linear forwards;
+}
+.progress[data-percentage="15"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="16"] .progress-right .progress-bar {
+  animation: loading-16 0.5s linear forwards;
+}
+.progress[data-percentage="16"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="17"] .progress-right .progress-bar {
+  animation: loading-17 0.5s linear forwards;
+}
+.progress[data-percentage="17"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="18"] .progress-right .progress-bar {
+  animation: loading-18 0.5s linear forwards;
+}
+.progress[data-percentage="18"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="19"] .progress-right .progress-bar {
+  animation: loading-19 0.5s linear forwards;
+}
+.progress[data-percentage="19"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="20"] .progress-right .progress-bar {
+  animation: loading-20 0.5s linear forwards;
+}
+.progress[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="21"] .progress-right .progress-bar {
+  animation: loading-21 0.5s linear forwards;
+}
+.progress[data-percentage="21"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="22"] .progress-right .progress-bar {
+  animation: loading-22 0.5s linear forwards;
+}
+.progress[data-percentage="22"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="23"] .progress-right .progress-bar {
+  animation: loading-23 0.5s linear forwards;
+}
+.progress[data-percentage="23"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="24"] .progress-right .progress-bar {
+  animation: loading-24 0.5s linear forwards;
+}
+.progress[data-percentage="24"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="25"] .progress-right .progress-bar {
+  animation: loading-25 0.5s linear forwards;
+}
+.progress[data-percentage="25"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="26"] .progress-right .progress-bar {
+  animation: loading-26 0.5s linear forwards;
+}
+.progress[data-percentage="26"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="27"] .progress-right .progress-bar {
+  animation: loading-27 0.5s linear forwards;
+}
+.progress[data-percentage="27"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="28"] .progress-right .progress-bar {
+  animation: loading-28 0.5s linear forwards;
+}
+.progress[data-percentage="28"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="29"] .progress-right .progress-bar {
+  animation: loading-29 0.5s linear forwards;
+}
+.progress[data-percentage="29"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="30"] .progress-right .progress-bar {
+  animation: loading-30 0.5s linear forwards;
+}
+.progress[data-percentage="30"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="31"] .progress-right .progress-bar {
+  animation: loading-31 0.5s linear forwards;
+}
+.progress[data-percentage="31"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="32"] .progress-right .progress-bar {
+  animation: loading-32 0.5s linear forwards;
+}
+.progress[data-percentage="32"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="33"] .progress-right .progress-bar {
+  animation: loading-33 0.5s linear forwards;
+}
+.progress[data-percentage="33"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="34"] .progress-right .progress-bar {
+  animation: loading-34 0.5s linear forwards;
+}
+.progress[data-percentage="34"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="35"] .progress-right .progress-bar {
+  animation: loading-35 0.5s linear forwards;
+}
+.progress[data-percentage="35"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="36"] .progress-right .progress-bar {
+  animation: loading-36 0.5s linear forwards;
+}
+.progress[data-percentage="36"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="37"] .progress-right .progress-bar {
+  animation: loading-37 0.5s linear forwards;
+}
+.progress[data-percentage="37"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="38"] .progress-right .progress-bar {
+  animation: loading-38 0.5s linear forwards;
+}
+.progress[data-percentage="38"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="39"] .progress-right .progress-bar {
+  animation: loading-39 0.5s linear forwards;
+}
+.progress[data-percentage="39"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="40"] .progress-right .progress-bar {
+  animation: loading-40 0.5s linear forwards;
+}
+.progress[data-percentage="40"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="41"] .progress-right .progress-bar {
+  animation: loading-41 0.5s linear forwards;
+}
+.progress[data-percentage="41"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="42"] .progress-right .progress-bar {
+  animation: loading-42 0.5s linear forwards;
+}
+.progress[data-percentage="42"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="43"] .progress-right .progress-bar {
+  animation: loading-43 0.5s linear forwards;
+}
+.progress[data-percentage="43"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="44"] .progress-right .progress-bar {
+  animation: loading-44 0.5s linear forwards;
+}
+.progress[data-percentage="44"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="45"] .progress-right .progress-bar {
+  animation: loading-45 0.5s linear forwards;
+}
+.progress[data-percentage="45"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="46"] .progress-right .progress-bar {
+  animation: loading-46 0.5s linear forwards;
+}
+.progress[data-percentage="46"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="47"] .progress-right .progress-bar {
+  animation: loading-47 0.5s linear forwards;
+}
+.progress[data-percentage="47"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="48"] .progress-right .progress-bar {
+  animation: loading-48 0.5s linear forwards;
+}
+.progress[data-percentage="48"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="49"] .progress-right .progress-bar {
+  animation: loading-49 0.5s linear forwards;
+}
+.progress[data-percentage="49"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="50"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="50"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="51"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="51"] .progress-left .progress-bar {
+  animation: loading-1 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="52"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="52"] .progress-left .progress-bar {
+  animation: loading-2 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="53"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="53"] .progress-left .progress-bar {
+  animation: loading-3 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="54"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="54"] .progress-left .progress-bar {
+  animation: loading-4 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="55"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="55"] .progress-left .progress-bar {
+  animation: loading-5 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="56"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="56"] .progress-left .progress-bar {
+  animation: loading-6 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="57"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="57"] .progress-left .progress-bar {
+  animation: loading-7 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="58"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="58"] .progress-left .progress-bar {
+  animation: loading-8 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="59"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="59"] .progress-left .progress-bar {
+  animation: loading-9 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="60"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="60"] .progress-left .progress-bar {
+  animation: loading-10 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="61"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="61"] .progress-left .progress-bar {
+  animation: loading-11 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="62"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="62"] .progress-left .progress-bar {
+  animation: loading-12 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="63"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="63"] .progress-left .progress-bar {
+  animation: loading-13 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="64"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="64"] .progress-left .progress-bar {
+  animation: loading-14 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="65"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="65"] .progress-left .progress-bar {
+  animation: loading-15 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="66"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="66"] .progress-left .progress-bar {
+  animation: loading-16 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="67"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="67"] .progress-left .progress-bar {
+  animation: loading-17 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="68"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="68"] .progress-left .progress-bar {
+  animation: loading-18 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="69"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="69"] .progress-left .progress-bar {
+  animation: loading-19 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="70"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="70"] .progress-left .progress-bar {
+  animation: loading-20 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="71"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="71"] .progress-left .progress-bar {
+  animation: loading-21 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="72"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="72"] .progress-left .progress-bar {
+  animation: loading-22 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="73"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="73"] .progress-left .progress-bar {
+  animation: loading-23 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="74"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="74"] .progress-left .progress-bar {
+  animation: loading-24 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="75"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="75"] .progress-left .progress-bar {
+  animation: loading-25 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="76"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="76"] .progress-left .progress-bar {
+  animation: loading-26 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="77"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="77"] .progress-left .progress-bar {
+  animation: loading-27 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="78"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="78"] .progress-left .progress-bar {
+  animation: loading-28 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="79"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="79"] .progress-left .progress-bar {
+  animation: loading-29 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="80"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="80"] .progress-left .progress-bar {
+  animation: loading-30 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="81"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="81"] .progress-left .progress-bar {
+  animation: loading-31 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="82"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="82"] .progress-left .progress-bar {
+  animation: loading-32 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="83"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="83"] .progress-left .progress-bar {
+  animation: loading-33 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="84"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="84"] .progress-left .progress-bar {
+  animation: loading-34 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="85"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="85"] .progress-left .progress-bar {
+  animation: loading-35 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="86"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="86"] .progress-left .progress-bar {
+  animation: loading-36 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="87"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="87"] .progress-left .progress-bar {
+  animation: loading-37 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="88"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="88"] .progress-left .progress-bar {
+  animation: loading-38 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="89"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="89"] .progress-left .progress-bar {
+  animation: loading-39 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="90"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="90"] .progress-left .progress-bar {
+  animation: loading-40 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="91"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="91"] .progress-left .progress-bar {
+  animation: loading-41 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="92"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="92"] .progress-left .progress-bar {
+  animation: loading-42 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="93"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="93"] .progress-left .progress-bar {
+  animation: loading-43 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="94"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="94"] .progress-left .progress-bar {
+  animation: loading-44 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="95"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="95"] .progress-left .progress-bar {
+  animation: loading-45 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="96"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="96"] .progress-left .progress-bar {
+  animation: loading-46 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="97"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="97"] .progress-left .progress-bar {
+  animation: loading-47 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="98"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="98"] .progress-left .progress-bar {
+  animation: loading-48 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="99"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="99"] .progress-left .progress-bar {
+  animation: loading-49 0.5s linear forwards 0.5s;
+}
+.progress[data-percentage="100"] .progress-right .progress-bar {
+  animation: loading-50 0.5s linear forwards;
+}
+.progress[data-percentage="100"] .progress-left .progress-bar {
+  animation: loading-50 0.5s linear forwards 0.5s;
+}
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(3.6);
+    transform: rotate(3.6deg);
+ }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(7.2);
+    transform: rotate(7.2deg);
+ }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(10.8);
+    transform: rotate(10.8deg);
+ }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(14.4);
+    transform: rotate(14.4deg);
+ }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(18);
+    transform: rotate(18deg);
+ }
+}
+@keyframes loading-6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(21.6);
+    transform: rotate(21.6deg);
+ }
+}
+@keyframes loading-7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(25.2);
+    transform: rotate(25.2deg);
+ }
+}
+@keyframes loading-8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(28.8);
+    transform: rotate(28.8deg);
+ }
+}
+@keyframes loading-9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(32.4);
+    transform: rotate(32.4deg);
+ }
+}
+@keyframes loading-10 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+ }
+}
+@keyframes loading-11 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(39.6);
+    transform: rotate(39.6deg);
+ }
+}
+@keyframes loading-12 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(43.2);
+    transform: rotate(43.2deg);
+ }
+}
+@keyframes loading-13 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(46.8);
+    transform: rotate(46.8deg);
+ }
+}
+@keyframes loading-14 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(50.4);
+    transform: rotate(50.4deg);
+ }
+}
+@keyframes loading-15 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(54);
+    transform: rotate(54deg);
+ }
+}
+@keyframes loading-16 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(57.6);
+    transform: rotate(57.6deg);
+ }
+}
+@keyframes loading-17 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(61.2);
+    transform: rotate(61.2deg);
+ }
+}
+@keyframes loading-18 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(64.8);
+    transform: rotate(64.8deg);
+ }
+}
+@keyframes loading-19 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(68.4);
+    transform: rotate(68.4deg);
+ }
+}
+@keyframes loading-20 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+ }
+}
+@keyframes loading-21 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(75.6);
+    transform: rotate(75.6deg);
+ }
+}
+@keyframes loading-22 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(79.2);
+    transform: rotate(79.2deg);
+ }
+}
+@keyframes loading-23 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(82.8);
+    transform: rotate(82.8deg);
+ }
+}
+@keyframes loading-24 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(86.4);
+    transform: rotate(86.4deg);
+ }
+}
+@keyframes loading-25 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(90);
+    transform: rotate(90deg);
+ }
+}
+@keyframes loading-26 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(93.6);
+    transform: rotate(93.6deg);
+ }
+}
+@keyframes loading-27 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(97.2);
+    transform: rotate(97.2deg);
+ }
+}
+@keyframes loading-28 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(100.8);
+    transform: rotate(100.8deg);
+ }
+}
+@keyframes loading-29 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(104.4);
+    transform: rotate(104.4deg);
+ }
+}
+@keyframes loading-30 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+ }
+}
+@keyframes loading-31 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(111.6);
+    transform: rotate(111.6deg);
+ }
+}
+@keyframes loading-32 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(115.2);
+    transform: rotate(115.2deg);
+ }
+}
+@keyframes loading-33 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(118.8);
+    transform: rotate(118.8deg);
+ }
+}
+@keyframes loading-34 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(122.4);
+    transform: rotate(122.4deg);
+ }
+}
+@keyframes loading-35 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(126);
+    transform: rotate(126deg);
+ }
+}
+@keyframes loading-36 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(129.6);
+    transform: rotate(129.6deg);
+ }
+}
+@keyframes loading-37 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(133.2);
+    transform: rotate(133.2deg);
+ }
+}
+@keyframes loading-38 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(136.8);
+    transform: rotate(136.8deg);
+ }
+}
+@keyframes loading-39 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(140.4);
+    transform: rotate(140.4deg);
+ }
+}
+@keyframes loading-40 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+ }
+}
+@keyframes loading-41 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(147.6);
+    transform: rotate(147.6deg);
+ }
+}
+@keyframes loading-42 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(151.2);
+    transform: rotate(151.2deg);
+ }
+}
+@keyframes loading-43 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(154.8);
+    transform: rotate(154.8deg);
+ }
+}
+@keyframes loading-44 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(158.4);
+    transform: rotate(158.4deg);
+ }
+}
+@keyframes loading-45 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(162);
+    transform: rotate(162deg);
+ }
+}
+@keyframes loading-46 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(165.6);
+    transform: rotate(165.6deg);
+ }
+}
+@keyframes loading-47 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(169.2);
+    transform: rotate(169.2deg);
+ }
+}
+@keyframes loading-48 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(172.8);
+    transform: rotate(172.8deg);
+ }
+}
+@keyframes loading-49 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(176.4);
+    transform: rotate(176.4deg);
+ }
+}
+@keyframes loading-50 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+ }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+ }
+}
+
+
+.form-control i {
+  position: absolute;
+  visibility: hidden;
+  
+
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+
+}
+
+
+button, input {
+  border: none;
+}
