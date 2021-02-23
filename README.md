@@ -16,4 +16,4 @@ Users can obtain a free quote by clicking on the "Free Quote" button on the top 
 
 Customers are able to keep track of the quote system progress with the help of a progress bar which represents the progress in the form of a percentage.  
 
-
+![image](https://user-images.githubusercontent.com/62531841/108912102-c3f14500-75ed-11eb-8ad8-700ba8b47a43.png)
