@@ -20,3 +20,6 @@ Customers are able to keep track of the quote system progress with the help of a
 
 
 ![image](https://user-images.githubusercontent.com/62531841/108912483-5396f380-75ee-11eb-88c4-4f51567f9b5d.png)
+
+
+![image](https://user-images.githubusercontent.com/62531841/108912647-893bdc80-75ee-11eb-9ff3-6f1fa1177a80.png)
