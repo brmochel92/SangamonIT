@@ -11,13 +11,13 @@ ___
 
 ___
 
-### Intro
+## Intro
 
 As a repair shop, handing out quotes is probably something that you find yourself doing all the time.  It gets repetitive and most of the times can be a distraction from more important work that needs to be done to keep the business thriving.  One way to cut back on all of this time is by developing a custom quote system that can accomodate for a large percentage of the devices you find yourself repairing for clients.  
 
 ___
 
-### Site Images
+## Site Images
 
 Below are some snapshots of the site in action
 
@@ -26,7 +26,7 @@ Below are some snapshots of the site in action
 
 ___
 
-### Functions 
+## Functions 
 
 This site was developed with the intentions of creating and integrating a custom quote modal that could save time and money from an owner perspective.  Basic CRUD functionality has been implemented (account creation/register).  A dashboard for registered accounts has been developed for future use.    
 
