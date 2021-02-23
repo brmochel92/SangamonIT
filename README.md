@@ -1,7 +1,10 @@
 # SangamonIT 
 ![image](https://user-images.githubusercontent.com/62531841/108911795-5fce8100-75ed-11eb-8c69-f7cc92163207.png)
 
-![](https://img.shields.io/badge/<WORD_ON_LEFT>-JavaScript-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
+![](https://img.shields.io/badge/Languages-JavaScript-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
+![](https://img.shields.io/badge/Languages-Node-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
+![](https://img.shields.io/badge/Languages-CSS3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
+![](https://img.shields.io/badge/Languages-HTML5-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
 
 
 
