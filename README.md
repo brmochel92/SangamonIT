@@ -11,11 +11,11 @@
 ![image](https://user-images.githubusercontent.com/62531841/108910719-de2a2380-75eb-11eb-9702-c012f8d86221.png)
 
 
-Users can obtain a free quote by clicking on the "Free Quote" button on the top right of the homepage, which pulls up the 6 quote modals, each of which is configured independently as it's own database table and schema, allowing for more flexibility and customization between product lines.  Each quote modal is comprised of a custom object which stores the integral details related to the object, such as Manufacturer, model, repair type, price, etcetera.  
+### Users can obtain a free quote by clicking on the "Free Quote" button on the top right of the homepage, which pulls up the 6 quote modals, each of which is configured independently as it's own database table and schema, allowing for more flexibility and customization between product lines.  Each quote modal is comprised of a custom object which stores the integral details related to the object, such as Manufacturer, model, repair type, price, etcetera.  
 
 ![image](https://user-images.githubusercontent.com/62531841/108914492-09634180-75f1-11eb-8884-ab7c8eb0508c.png)
 
-Customers are able to keep track of the quote system progress with the help of a progress bar which represents the progress in the form of a percentage.  
+### Customers are able to keep track of the quote system progress with the help of a progress bar which represents the progress in the form of a percentage.  
 
 ![image](https://user-images.githubusercontent.com/62531841/108912102-c3f14500-75ed-11eb-8ad8-700ba8b47a43.png)
 
