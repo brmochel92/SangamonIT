@@ -23,6 +23,16 @@ This site was developed with the intentions of creating and integrating a custom
 
 ![image](https://user-images.githubusercontent.com/62531841/108910719-de2a2380-75eb-11eb-9702-c012f8d86221.png)
 
+### Sign-In
+
+![image](https://user-images.githubusercontent.com/62531841/108917696-c3f54300-75f5-11eb-83f6-fc0909bdce2f.png)
+
+### Register
+
+![image](https://user-images.githubusercontent.com/62531841/108917770-e12a1180-75f5-11eb-9bb0-171dd0bbcf15.png)
+
+### Quote 
+
 Users can obtain a free quote by clicking on the "Free Quote" button on the top right of the homepage, which pulls up the 6 quote modals, each of which is configured independently as it's own database table and schema, allowing for more flexibility and customization between product lines.  Each quote modal is comprised of a custom object which stores the integral details related to the object, such as Manufacturer, model, repair type, price, etcetera.  
 
 ![image](https://user-images.githubusercontent.com/62531841/108914492-09634180-75f1-11eb-8884-ab7c8eb0508c.png)
