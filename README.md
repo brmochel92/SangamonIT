@@ -53,7 +53,19 @@ Once the user finalizes the quote, all the data pertaining to the schema is sent
 
 ### Future Updates
 
-Currently, the users must contact us outside of the site - I am using Facebook Business Page as my main contact method with customers.  Ideally, a way to schedule and correspond to customers will be integrated in future updates, as will Stripe payments. I have a backend dashboard page for registered accounts where it will display and allow easier retrieval and access to quotes, invoices, payments, and other pertinent information.  
+Currently, the users must contact us outside of the site - I am using Facebook Business Page as my main contact method with customers.  Ideally, a way to schedule and correspond to customers will be integrated in future updates, as will Stripe payments. I have a backend dashboard page for registered accounts where it will display and allow easier retrieval and access to quotes, invoices, payments, and other pertinent information.  Only the cell quotes modal is developed - the other 5 quote modals need developed.  
+
+### Requirements
+
+If you want to replicate or use this, you will need a few things to get up and running.  Firstly, you will need a mongoDB database and you will need to add your URI under connection.js - const URI = ""
+
+You will also need to download node.  
+
+Once these requirements have been met, go to the folder where you have cloned the repo and copy the address URL;  Start up CMD and cd into this directory and start the node server using the following "node server.js"  
+
+You will know if you succeeded because you shall be greeted by two custom log messages - "Server Started"  & "DB Connected!"  
+
+Enjoy and let me know how I can improve!  Contributions Welcomed 
 
 
 
