@@ -50,6 +50,8 @@ ___
 
 Users can obtain a free quote by clicking on the "Free Quote" button on the top right of the homepage, which pulls up the 6 quote modals, each of which is configured independently as it's own database table and schema, allowing for more flexibility and customization between product lines.  Each quote modal is comprised of a custom object which stores the integral details related to the object, such as Manufacturer, model, repair type, price, etcetera.  
 
+## iPhone 6 Example
+
 `window.CELL_DATA = {
 	Apple: {
 		label: 'Apple',
