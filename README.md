@@ -1,5 +1,8 @@
 # SangamonIT 
 ![image](https://user-images.githubusercontent.com/62531841/108911795-5fce8100-75ed-11eb-8c69-f7cc92163207.png)
+
+___
+
 ### Languages
 ![](https://img.shields.io/badge/FrontEnd-JavaScript-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
 ![](https://img.shields.io/badge/BackEnd-Node-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
