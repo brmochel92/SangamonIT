@@ -50,6 +50,47 @@ ___
 
 Users can obtain a free quote by clicking on the "Free Quote" button on the top right of the homepage, which pulls up the 6 quote modals, each of which is configured independently as it's own database table and schema, allowing for more flexibility and customization between product lines.  Each quote modal is comprised of a custom object which stores the integral details related to the object, such as Manufacturer, model, repair type, price, etcetera.  
 
+`window.CELL_DATA = {
+	Apple: {
+		label: 'Apple',
+		options: {
+			iphone6: {
+				label: 'iPhone 6/6s/6+',
+				options: {
+					iphone6: {
+						label: 'Iphone 6',
+						options: {
+							iphone6battery: {
+								label: 'Battery',
+								price: '$10'
+							},
+							iphone6display: {
+								label: 'Display',
+								price: '15$'
+							},
+							iphone6charger: {
+								label: 'Charger',
+								price: '15$'
+							},
+							iphone6speaker: {
+								label: 'Speaker',
+								price: '15$'
+							},
+							iphone6homebutton: {
+								label: 'Home Button',
+								price: '15$'
+							},
+							iphone6rearassembly: {
+								label: 'Rear Assembly',
+								price: '15$'
+							},
+							iphone6somethingelse: {
+								label: 'Something Else',
+							}
+						}
+					},
+` 
+
 ![image](https://user-images.githubusercontent.com/62531841/108914492-09634180-75f1-11eb-8884-ab7c8eb0508c.png)
 
 Customers are able to keep track of the quote system progress with the help of a progress bar which represents the progress in the form of a percentage.  
