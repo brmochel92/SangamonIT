@@ -52,7 +52,8 @@ Users can obtain a free quote by clicking on the "Free Quote" button on the top 
 
 ## iPhone 6 Example
 
-`window.CELL_DATA = {
+`
+window.CELL_DATA = {
 	Apple: {
 		label: 'Apple',
 		options: {
@@ -134,7 +135,7 @@ Enjoy and let me know how I can improve!  Contributions Welcomed
 
 <!-- Actual text -->
 
-You can find me on [![LinkedIn][3.2]][3].
+You can find me on [![LinkedIn][2.2]][2].
 
 <!-- Icons -->
 
