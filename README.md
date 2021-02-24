@@ -130,16 +130,15 @@ Once these requirements have been met, go to the folder where you have cloned th
 
 You will know if you succeeded because you shall be greeted by two custom log messages - "Server Started"  & "DB Connected!"  
 
-Enjoy and let me know how I can improve!  Contributions Welcomed 
+### Reach Out
 
-
-<!-- Actual text -->
+Contributions welcomed.  
 
 You can find me on [![LinkedIn][2.2]][2].
 
 <!-- Icons -->
 
-[2.2]: https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/linkedin-3-16.png (LinkedIn icon without padding)
+[2.2]: ![image](https://user-images.githubusercontent.com/62531841/108924970-5c44f500-7601-11eb-82a9-c610b1459452.png)
 
 <!-- Links to your social media accounts -->
 
