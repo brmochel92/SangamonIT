@@ -138,7 +138,7 @@ You can find me on [![LinkedIn][2.2]][2].
 
 <!-- Icons -->
 
-[2.2]: ![image](https://user-images.githubusercontent.com/62531841/108924970-5c44f500-7601-11eb-82a9-c610b1459452.png)
+[2.2]: ![twitter-xxl](https://user-images.githubusercontent.com/62531841/108925206-c52c6d00-7601-11eb-9d93-ce44726fd2e2.png)
 
 <!-- Links to your social media accounts -->
 
