@@ -134,13 +134,7 @@ You will know if you succeeded because you shall be greeted by two custom log me
 
 Contributions welcomed.  
 
-You can find me on [![LinkedIn][2.2]][2].
-
-<!-- Icons -->
-
-[2.2]: ![twitter-xxl](https://user-images.githubusercontent.com/62531841/108925206-c52c6d00-7601-11eb-9d93-ce44726fd2e2.png)
-
-<!-- Links to your social media accounts -->
+You can find me on ![linkedin-3-xxl](https://user-images.githubusercontent.com/62531841/108925271-e2613b80-7601-11eb-88ae-ca92f453c880.png)[2]
 
 [2]: https://www.linkedin.com/in/brandonmochel
 
