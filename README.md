@@ -21,6 +21,7 @@ ___
 
 Below are some snapshots of the site in action
 
+![final2gif](https://user-images.githubusercontent.com/62531841/109203397-b660ca00-7769-11eb-93e5-aae61c3f785d.gif)
 ![image](https://user-images.githubusercontent.com/62531841/109203306-9cbf8280-7769-11eb-888c-2547c629ed76.png)
 ![image](https://user-images.githubusercontent.com/62531841/108914223-a8d40480-75f0-11eb-8fa8-3ad6ad7c753d.png)
 
